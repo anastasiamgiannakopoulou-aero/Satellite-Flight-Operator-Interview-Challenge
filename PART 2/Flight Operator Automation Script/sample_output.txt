@@ -1,0 +1,50 @@
+SATELLITE FLIGHT OPERATOR - PROCEDURE AUTOMATION
+
+[OPERATOR] Contact starts at AOS.
+[OPERATOR] Communications are assumed to be full-duplex and RX is ON.
+[COMMAND]  TX_ON
+[RESULT]   TX is ON and telemetry is available.
+
+STEP 1: INITIAL HEALTH CHECK
+[OPERATOR] Check spacecraft telemetry.
+[OPERATOR] Review mode, power, thermal, AOCS and Communications status.
+[RESULT]   Spacecraft health is within expected conditions.
+
+STEP 2: PAYLOAD DATA TRANSFER
+[OPERATOR] Start payload-data download.
+[OPERATOR] Monitor downlink and transfer progress.
+[RESULT]   Payload data transfer completed successfully.
+
+STEP 3: PLATFORM DATA TRANSFER 
+[OPERATOR] Start platform / housekeeping data download.
+[OPERATOR] Continue monitoring the downlink.
+[RESULT]   Platform data transfer completed successfully.
+
+STEP 4: COMMUNICATIONS CONFIGURATION 
+[OPERATOR] Upload the approved Communications configuration.
+[RESULT]   Configuration upload verified successfully.
+
+STEP 5: COMMUNICATIONS SUBSYSTEM RESTART
+[OPERATOR] Command the Communications Subsystem restart.
+[OPERATOR] Expected effect: temporary loss of downlink.
+[COMMAND]  RESTART_COMMS_SUBSYSTEM
+[RESULT]   COMMS subsystem recovered as expected.
+
+STEP 6: RESTORE TX MODULATION
+[OPERATOR] Command TX Modulation restoration.
+[COMMAND]  RESTORE_TX_MODULATION
+[RESULT]   TX Modulation restored and valid downlink telemetry received.
+
+STEP 7: FINAL VERIFICATION 
+[OPERATOR] Confirm final spacecraft and COMMS state.
+[OPERATOR] Record completed, incomplete and deferred activities.
+[RESULT]   Final state recorded.
+
+END OF CONTACT
+[OPERATOR] Remaining contact time: 20 seconds.
+[OPERATOR] This time is available as contingency margin for unexpected delays.
+[OPERATOR] Record completed / incomplete / deferred activities.
+[OPERATOR] Prepare handover for the next contact.
+[OPERATOR] Contact ends at LOS.
+
+Simulation complete.
